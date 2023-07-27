@@ -11,6 +11,7 @@ const TEST_TEXT_NOT_A_NUMBER = 'Esto no es un número: 41u0003jot';
 describe('analyzer', () => {
   describe('analyzer.getWordCount', () => {
     it('debería retornar 19 para "' + TEST_TEXT_NO_NUMBERS + '"', () => {
+      console.log(analyzer.getWordCount(TEST_TEXT_NO_NUMBERS))
       expect(analyzer.getWordCount(TEST_TEXT_NO_NUMBERS)).toBe(19);
     });
   });
@@ -68,7 +69,7 @@ describe('analyzer', () => {
 });  
 
 //TODO: eliminar .skip para que se ejecute el test de las funcionalidades opcionales
-describe.skip('Opcional:', () => {
+describe('Opcional:', () => {
   const TEST_TEST_EMPTY = '';
   const TEST_TEST_SPACES = '       ';
   const TEST_TEXT_PUNCTUATION_MARKS = '.,;:"«»[]{}()¿?¡!-';
