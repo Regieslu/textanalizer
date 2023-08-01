@@ -68,4 +68,3 @@ textarea.addEventListener("keyup", function () {
   displayNumbersSum(textarea);
   displayAverageWordLength(textarea);
 });
-

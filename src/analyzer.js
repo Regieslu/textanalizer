@@ -1,4 +1,4 @@
-const analyzer = {  
+const analyzer = { 
   getWordCount: (text) => {
     const textValid = text.trim().replace(/[^a-z0-9\s]/gi, ''); //trim: quita espacios a los extremos de las palabras. 
     if (textValid === ""){
